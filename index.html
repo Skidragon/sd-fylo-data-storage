@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <picture class="background-picture">
+      <source srcset="images/bg-mobile.png" media="(max-width: 44em)">
+      <source srcset="images/bg-desktop.png" media="(min-width: 44em)">
+      <img src="images/bg-desktop.png" alt="" />
+    </picture>
+
+    <div class="actions">
+      <img src="images/logo.svg" class="actions__logo logo" />
+      <div class="actions__group">
+        <button class="actions__group-btn document-btn">
+          <img src="images/icon-document.svg" alt="document" />
+        </button>
+        <button class="actions__group-btn folder-btn">
+          <img src="images/icon-folder.svg" alt="folder" />
+        </button>
+        <button class="actions__group-btn document-btn">
+          <img src="images/icon-upload.svg" alt="upload" />
+        </button>
+      </div>
+    </div> <!-- /actions -->
+
+    <div class="status">
+      <h2 class="status__storage-usage">You’ve used 815 GB of your storage.</h2>
+      <div class="status__storage-usage-meter"></div>
+      <div class="status__data-left"></div>
+    </div>
+  </main>
+  You’ve used 815 GB of your storage
+
+  185 GB Left
+
+  0 GB
+  1000 GB
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Simon Davis</a>.
+  </div>
+</body>
+
+</html>

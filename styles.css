@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+   --blue: #1E2D69;
+   --dark-blue: #0C122C;
+   --pale-blue: #697ED4;
+   --white: #f2f2f2;
+   --pink: #FFA197;
+   --light-purple: #FF4A95;
+   --sm-space: 1rem;
+   --md-space: 2rem;
+   --lg-space: 3rem;
+   --desktop: 44em;
+}
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--dark-blue);
+}
+main {
+
+}
+.background-picture {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.actions {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.actions__logo {
+
+}
+
+.actions__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions__group > * + * {
+    margin-left: 1em;
+}
